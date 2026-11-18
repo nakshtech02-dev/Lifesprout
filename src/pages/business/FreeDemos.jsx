@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import usePersistentState from "../../hooks/usePersistentState";
 import {
   Search,
   Users,
@@ -54,7 +55,10 @@ const statusStyles = {
 };
 
 const FreeDemos = () => {
-  const [demos, setDemos] = useState(initialDemos);
+  const [demos, setDemos] = usePersistentState(
+  "lifesprout_demos",
+  initialDemos
+);
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState("All");
   const [assignedFilter, setAssignedFilter] = useState("All");

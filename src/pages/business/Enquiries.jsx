@@ -1,5 +1,6 @@
 
 import { useMemo, useState } from "react";
+import usePersistentState from "../../hooks/usePersistentState";
 import {
   Search,
   Users,
@@ -24,7 +25,10 @@ const statusStyles = {
 };
 
 const Enquiries = () => {
-  const [enquiries, setEnquiries] = useState(initialEnquiries);
+  const [enquiries, setEnquiries] = usePersistentState(
+  "lifesprout_enquiries",
+  initialEnquiries
+);
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState("All");
   const [selectedEnquiry, setSelectedEnquiry] = useState(null);

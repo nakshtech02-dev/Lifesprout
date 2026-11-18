@@ -1,5 +1,6 @@
 
 import { useMemo, useState } from "react";
+import usePersistentState from "../../hooks/usePersistentState";
 
 import {
   IndianRupee,
@@ -27,7 +28,10 @@ import {
 } from "../../utils/paymentUtils";
 
 const Payments = () => {
-  const [payments, setPayments] = useState(initialPayments);
+  const [payments, setPayments] = usePersistentState(
+  "lifesprout_payments",
+  initialPayments
+);
 
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState("All");

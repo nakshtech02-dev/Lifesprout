@@ -1,7 +1,9 @@
 
 import { History } from "lucide-react";
-
+import { useNavigate } from "react-router-dom";
 const ArticleList = ({ articles }) => {
+
+   const navigate = useNavigate();
   return (
     <div className="rounded-2xl border border-[#DFE7F5] bg-white p-5">
       <div className="mb-4 flex items-center justify-between">
@@ -10,7 +12,7 @@ const ArticleList = ({ articles }) => {
           Recent articles
         </h2>
 
-        <button className="text-xs font-medium text-[#246BFA] hover:underline">
+        <button  onClick={() => navigate("/articles")}  className="text-xs font-medium text-[#246BFA] hover:underline">
           View all
         </button>
       </div>
