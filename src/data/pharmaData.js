@@ -1,0 +1,126 @@
+// src/data/pharmaData.js
+
+export const pharmaCategories = [
+  "Cardiology",
+  "Diabetes Care",
+  "General Medicine",
+  "Orthopaedics",
+  "Healthcare",
+];
+
+export const initialPharmaProducts = [
+  {
+    id: "PH-1001",
+    name: "CardioCare Tablets",
+    category: "Cardiology",
+    manufacturer: "LifeMed Pharma",
+    price: 450,
+    stock: 250,
+    status: "Active",
+    description: "Sample product record for dashboard demonstration.",
+  },
+  {
+    id: "PH-1002",
+    name: "GlucoBalance Tablets",
+    category: "Diabetes Care",
+    manufacturer: "HealthPlus Labs",
+    price: 320,
+    stock: 180,
+    status: "Active",
+    description: "Sample product record for dashboard demonstration.",
+  },
+  {
+    id: "PH-1003",
+    name: "OrthoFlex Support",
+    category: "Orthopaedics",
+    manufacturer: "MedCare Industries",
+    price: 850,
+    stock: 75,
+    status: "Active",
+    description: "Sample product record for dashboard demonstration.",
+  },
+  {
+    id: "PH-1004",
+    name: "Daily Wellness Pack",
+    category: "Healthcare",
+    manufacturer: "LifeMed Pharma",
+    price: 599,
+    stock: 0,
+    status: "Inactive",
+    description: "Sample product record for dashboard demonstration.",
+  },
+  {
+    id: "PH-1005",
+    name: "GeneralCare Capsules",
+    category: "General Medicine",
+    manufacturer: "Wellness Biotech",
+    price: 275,
+    stock: 420,
+    status: "Active",
+    description: "Sample product record for dashboard demonstration.",
+  },
+  {
+    id: "PH-1006",
+    name: "JointEase Gel",
+    category: "Orthopaedics",
+    manufacturer: "MedCare Industries",
+    price: 190,
+    stock: 95,
+    status: "Active",
+    description: "Sample product record for dashboard demonstration.",
+  },
+];
+
+export const initialPharmaEnquiries = [
+  {
+    id: "PENQ-1001",
+    customerName: "Rahul Mehta",
+    email: "rahul@example.com",
+    phone: "+91 98765 43210",
+    productId: "PH-1001",
+    quantity: 50,
+    message: "Please share bulk pricing and availability.",
+    status: "New",
+    date: "2026-11-18",
+  },
+  {
+    id: "PENQ-1002",
+    customerName: "Priya Shah",
+    email: "priya@example.com",
+    phone: "+91 98765 12345",
+    productId: "PH-1002",
+    quantity: 100,
+    message: "Interested in ordering for our clinic.",
+    status: "Contacted",
+    date: "2026-11-17",
+  },
+  {
+    id: "PENQ-1003",
+    customerName: "Amit Verma",
+    email: "amit@example.com",
+    phone: "+91 99887 66554",
+    productId: "PH-1003",
+    quantity: 25,
+    message: "Please send product specifications.",
+    status: "Converted",
+    date: "2026-11-16",
+  },
+  {
+    id: "PENQ-1004",
+    customerName: "Neha Kapoor",
+    email: "neha@example.com",
+    phone: "+91 91234 56789",
+    productId: "PH-1005",
+    quantity: 75,
+    message: "Need pricing for a bulk purchase.",
+    status: "New",
+    date: "2026-11-15",
+  },
+];
+
+export const formatINR = (amount) =>
+  new Intl.NumberFormat("en-IN", {
+    style: "currency",
+    currency: "INR",
+    maximumFractionDigits: 0,
+  }).format(amount);

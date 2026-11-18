@@ -1,0 +1,77 @@
+// src/data/partnerData.js
+
+export const initialPartners = [
+  {
+    id: "UKP-1001",
+    name: "James Wilson",
+    email: "james.wilson@example.com",
+    phone: "+44 7700 900101",
+    region: "London",
+    status: "Active",
+    commissionRate: 10,
+    monthlySales: 12500,
+    payoutStatus: "Pending",
+  },
+  {
+    id: "UKP-1002",
+    name: "Oliver Smith",
+    email: "oliver.smith@example.com",
+    phone: "+44 7700 900102",
+    region: "Manchester",
+    status: "Active",
+    commissionRate: 12,
+    monthlySales: 8400,
+    payoutStatus: "Paid",
+  },
+  {
+    id: "UKP-1003",
+    name: "Emily Brown",
+    email: "emily.brown@example.com",
+    phone: "+44 7700 900103",
+    region: "Birmingham",
+    status: "Active",
+    commissionRate: 8,
+    monthlySales: 6200,
+    payoutStatus: "Pending",
+  },
+  {
+    id: "UKP-1004",
+    name: "George Taylor",
+    email: "george.taylor@example.com",
+    phone: "+44 7700 900104",
+    region: "Leeds",
+    status: "Inactive",
+    commissionRate: 10,
+    monthlySales: 3100,
+    payoutStatus: "Paid",
+  },
+  {
+    id: "UKP-1005",
+    name: "Amelia Johnson",
+    email: "amelia.johnson@example.com",
+    phone: "+44 7700 900105",
+    region: "Liverpool",
+    status: "Active",
+    commissionRate: 15,
+    monthlySales: 15800,
+    payoutStatus: "Pending",
+  },
+  {
+    id: "UKP-1006",
+    name: "Harry Davies",
+    email: "harry.davies@example.com",
+    phone: "+44 7700 900106",
+    region: "Bristol",
+    status: "Active",
+    commissionRate: 10,
+    monthlySales: 5400,
+    payoutStatus: "Paid",
+  },
+];
+
+export const formatGBP = (amount) =>
+  new Intl.NumberFormat("en-GB", {
+    style: "currency",
+    currency: "GBP",
+    maximumFractionDigits: 0,
+  }).format(amount);

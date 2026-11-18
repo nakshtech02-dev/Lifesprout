@@ -1,0 +1,92 @@
+
+export const adsenseSummary = {
+  todayEarnings: 1250.75,
+  thisMonthEarnings: 28450.5,
+  lastMonthEarnings: 24900.25,
+  totalEarnings: 156780.8,
+  impressions: 245000,
+  clicks: 7350,
+  pageViews: 185000,
+};
+
+export const monthlyEarnings = [
+  { month: "Jan", earnings: 12500 },
+  { month: "Feb", earnings: 14800 },
+  { month: "Mar", earnings: 13200 },
+  { month: "Apr", earnings: 16900 },
+  { month: "May", earnings: 18500 },
+  { month: "Jun", earnings: 17200 },
+  { month: "Jul", earnings: 21000 },
+  { month: "Aug", earnings: 19800 },
+  { month: "Sep", earnings: 22500 },
+  { month: "Oct", earnings: 24900 },
+  { month: "Nov", earnings: 28450 },
+  { month: "Dec", earnings: 0 },
+];
+
+export const initialDailyEarnings = [
+  {
+    id: "ADS-1001",
+    date: "2026-11-18",
+    earnings: 1250.75,
+    impressions: 12500,
+    clicks: 375,
+    pageViews: 9500,
+  },
+  {
+    id: "ADS-1002",
+    date: "2026-11-17",
+    earnings: 1180.5,
+    impressions: 11800,
+    clicks: 354,
+    pageViews: 8900,
+  },
+  {
+    id: "ADS-1003",
+    date: "2026-11-16",
+    earnings: 980.25,
+    impressions: 10500,
+    clicks: 315,
+    pageViews: 8200,
+  },
+  {
+    id: "ADS-1004",
+    date: "2026-11-15",
+    earnings: 1450.0,
+    impressions: 14000,
+    clicks: 420,
+    pageViews: 11000,
+  },
+  {
+    id: "ADS-1005",
+    date: "2026-11-14",
+    earnings: 1100.75,
+    impressions: 11200,
+    clicks: 336,
+    pageViews: 8700,
+  },
+  {
+    id: "ADS-1006",
+    date: "2026-11-13",
+    earnings: 890.5,
+    impressions: 9800,
+    clicks: 294,
+    pageViews: 7500,
+  },
+  {
+    id: "ADS-1007",
+    date: "2026-11-12",
+    earnings: 1320.25,
+    impressions: 13000,
+    clicks: 390,
+    pageViews: 10000,
+  },
+  {
+    id: "ADS-1008",
+    date: "2026-11-11",
+    earnings: 1050.0,
+    impressions: 10800,
+    clicks: 324,
+    pageViews: 8400,
+  },
+];
